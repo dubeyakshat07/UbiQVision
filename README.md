@@ -3,7 +3,7 @@
 
 > **Beyond "Yes/No" Diagnosis:** A framework that provides a breakdown of medical decisions into **Evidence**, **Conflict**, and **Ignorance**.
 
-## 📋 Overview
+## Overview
 
 Standard Deep Learning models in healthcare often suffer from "Silent Failure"—they provide high-confidence predictions even on Out-of-Distribution (OOD) data. This project bridges **Explainable AI (XAI)** and **Uncertainty Quantification (UQ)** to solve this problem.
 
@@ -19,7 +19,7 @@ By replacing standard Softmax outputs with a **Dempster-Shafer Theory (DST)** fu
 
 ## Interpretation
 
-### 1. Feature Attribution (The "Witnesses")
+### 1. Feature Attribution
 We utilize **SHAP (DeepExplainer)** to extract feature importance from multiple models.
 * **Red Pixels:** Positive evidence (Lesions/Anatomy confirming diagnosis).
 * **Blue Pixels:** Negative evidence (Counter-indicative textures).
@@ -67,6 +67,6 @@ $$K = \sum_{B \cap C = \emptyset} m_1(B) \cdot m_2(C)$$
 ## Installation & Usage
 
 ### Prerequisites
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 ---
