@@ -17,7 +17,7 @@ By replacing standard Softmax outputs with a **Dempster-Shafer Theory (DST)** fu
 
 ---
 
-## 🖼️ Gallery & Interpretation
+## Interpretation
 
 ### 1. Feature Attribution (The "Witnesses")
 We utilize **SHAP (DeepExplainer)** to extract feature importance from multiple models.
@@ -27,7 +27,7 @@ We utilize **SHAP (DeepExplainer)** to extract feature importance from multiple 
 ![SHAP Feature Attribution](image.png)
 *Figure 1: Comparison of Model 1 (High Reliability) focusing on optic discs vs. Model 3 (Low Reliability) focusing on background noise.*
 
-### 2. The Evidential Trinity (DST Maps)
+### 2. The Evidential Fusion for Uncertainty Quantification (DST Maps)
 Unlike standard probability, our output is a set of three maps:
 1.  **Belief Map (Green):** Confirmed evidence. "I see a lesion here."
 2.  **Plausibility Map (Blue):** The upper bound of probability. "It is possible this is sick."
@@ -38,7 +38,7 @@ Unlike standard probability, our output is a set of three maps:
 
 ---
 
-## ⚙️ Methodology & Architecture
+## Methodology & Architecture
 
 ### The Workflow
 1.  **Heterogeneous Ensemble:** $N$ models (Weak, Medium, Strong) are trained on the dataset.
@@ -64,7 +64,7 @@ $$K = \sum_{B \cap C = \emptyset} m_1(B) \cdot m_2(C)$$
 
 ---
 
-## 🚀 Installation & Usage
+## Installation & Usage
 
 ### Prerequisites
 pip install -r requirements.txt
